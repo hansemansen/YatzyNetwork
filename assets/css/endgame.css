@@ -1,0 +1,52 @@
+/* Lysere blå baggrundsfarve og hvid tekst */
+body {
+  background-color: #2a7dd6; /* Lysere blå baggrund */
+  color: white; /* Hvid tekst */
+  font-family: Arial, sans-serif; /* Standard skrifttype */
+  margin: 0;
+  padding: 0;
+  text-align: center; /* Centrerer tekst */
+  display: flex; /* Brug flexbox til centrering */
+  flex-direction: column;
+  justify-content: center; /* Placerer tekst i midten af skærmen lodret */
+  height: 100vh; /* Får kroppen til at fylde hele skærmhøjden */
+}
+
+h1 {
+  margin: 20px 0;
+}
+
+ul {
+  list-style: none; /* Fjern punkter */
+  padding: 0;
+  margin: 20px auto; /* Centrerer listen */
+  max-width: 300px; /* Begræns bredden */
+  background-color: #3399ff; /* Lysere blå til listebaggrund */
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Blød skygge */
+}
+
+li {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #0047ab; /* Mørkeblå tekst til spillernavne */
+  font-weight: bold; /* Fremhæv spillernavne */
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
+  display: inline-block;
+  background-color: #007fff; /* Knappens baggrundsfarve */
+  padding: 10px 20px;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Blød skygge */
+  transition: background-color 0.3s ease; /* Glat overgang */
+}
+
+a:hover {
+  background-color: #005bb5; /* Mørkere blå ved hover */
+}

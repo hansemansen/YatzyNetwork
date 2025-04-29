@@ -1,0 +1,20 @@
+doctype html
+html
+  head
+    title Forside
+    script(src="/js/clientfrontpage.js", defer) 
+    link(rel="stylesheet" href="/css/frontpage.css")
+
+  body
+    h1 Velkommen til Yatzy
+    form(id="playerForm")
+      label(for="username") Indtast dit navn:
+      input(type="text" name="username" id="username", required)
+      button(type="submit") Tilføj spiller
+    h2 Spillere
+    h2 
+    ul#playerList
+      each spiller in spillere
+        li= spiller.name
+    h2 
+      a(href="/yatzy") Start spillet

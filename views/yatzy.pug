@@ -1,0 +1,53 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Simple Grids
+    link(rel="stylesheet" href="/css/yatzy.css")
+    script(src="/js/clientyatzy.js", defer)
+
+  body
+    .grid-container
+      .grid.grid1
+        each i of [1, 2, 3, 4, 5]
+          - let imgSrc = `/images/${i}er.png`
+          - let imgId = `terning-billede${i}`
+          .terning(id=`terning${i}`)
+            img(src=imgSrc id=imgId)
+        p
+        p#turn Antal kast
+        p#antalkast 0
+        p 
+        p#kast-resultat 
+        button#kast Roll
+        
+
+      .grid.grid2
+        each i of [1, 2, 3, 4, 5, 6]
+          .forste
+            p #{i}ere
+          div
+            input(type="text" class="anden" id=`${i}ere` data-clickable="true" readonly)
+
+        .tredje
+          p Sum
+        div
+          input(type="text" class="fjerde" id="sum" value="0" readonly)
+
+        .femte
+          p Bonus
+        div
+          input(type="text" class="sjette" id="bonus" value="0" readonly)
+
+        each item of [["1 par", "1par"], ["2 par", "2par"], ["3 ens", "3ens"], ["4 ens", "4ens"], ["Fuld Hus", "fullhouse"], ["Lille Straight", "smallstraight"], ["Stor Straight", "largestraight"], ["Chancen", "chance"], ["Yatzy", "yatzy"]]
+          - let [label, id] = item
+          .forste
+            p #{label}
+          div
+            input(type="text" class="anden" id=id data-clickable="true" readonly)
+
+        .femte
+          p Total
+        div
+          input(type="text" class="sjette" id="total" value="0" readonly)

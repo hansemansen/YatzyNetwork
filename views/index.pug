@@ -1,0 +1,13 @@
+doctype html
+html
+    head
+        title Kunder
+        script(src="/js/index.js", defer)
+    body
+        h1 Liste over kunder
+        ul
+            each kunde in kunder
+                li(data-nr=kunde.nr) #{kunde.navn}
+        hr
+        h2 Adresse
+        p#adresse Her vises kundens adresse, når du klikker på et navn.

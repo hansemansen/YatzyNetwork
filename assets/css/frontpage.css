@@ -1,0 +1,82 @@
+/* Lysere blå baggrundsfarve og hvid tekst */
+body {
+  background-color: #2a7dd6; /* Lysere blå baggrund */
+  color: white; /* Hvid tekst */
+  font-family: Arial, sans-serif; /* Standard skrifttype */
+  margin: 0;
+  padding: 0;
+  text-align: center; /* Centrerer tekst */
+  display: flex; /* Brug flexbox til centrering */
+  flex-direction: column;
+  justify-content: center; /* Placerer tekst i midten af skærmen lodret */
+  height: 100vh; /* Får kroppen til at fylde hele skærmhøjden */
+}
+
+h1, h2 {
+  margin: 0px 0;
+}
+
+form {
+  margin: 20px auto; /* Centrerer formularen */
+  max-width: 300px;
+  padding: 20px;
+  background-color: #3399ff; /* Lysere blå til formularbaggrund */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Blød skygge */
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Indvendig skygge */
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007fff; /* Lysere blå */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease; /* Glat overgang */
+}
+
+button:hover {
+  background-color: #005bb5; /* Mørkere blå */
+}
+
+ul#playerList {
+  list-style: none; /* Fjern punkter */
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #0047ab; /* Mørkeblå tekst til spillernavne */
+  font-weight: bold; /* Fremhæv spillernavne */
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+a:hover {
+  text-decoration: underline;
+}

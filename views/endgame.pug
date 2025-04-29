@@ -1,0 +1,40 @@
+doctype html
+html
+  head
+    title Spillet er slut
+    style.
+      body {
+        background-color: #2a7dd6; /* Lyseblå baggrund */
+        font-family: Arial, sans-serif; /* Standard skrifttype */
+        margin: 0;
+        padding: 20px;
+        text-align: center;
+      }
+      h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      li {
+        font-size: 24px;
+        margin: 10px 0;
+      }
+      a {
+        font-size: 20px;
+        color: white;
+        text-decoration: none;
+        margin-top: 20px;
+        display: inline-block;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+  body
+    h1 Spillet er slut!
+    ul
+      each spiller in spillere
+        li #{spiller.name} fik #{spiller.points} point.
+    a(href="/") Start et nyt spil
