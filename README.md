@@ -23,7 +23,7 @@ Et simpelt Yatzy-spil bygget i JavaScript og Express, hvor spillere kan spille s
 ## Sådan kører du det
 
 Clone projektet:
-git clone https://github.com/hansemansen/Yatzy.git
+git clone https://github.com/hansemansen/YatzyNetwork.git
 cd Yatzy
 
 Installer afhængigheder:
